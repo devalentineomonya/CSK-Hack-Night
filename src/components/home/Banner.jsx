@@ -57,6 +57,7 @@ const Banner = () => {
             <h2 className="text-3xl banner-title">An Exciting Opportunity</h2>
             <h2 className="text-4xl banner-title-2">
               to Learn and Collaborate
+
             </h2>
           </div>
           <div className="py-3 text-lg text-gray-100 animate-banner-description">
@@ -64,6 +65,7 @@ const Banner = () => {
               Join us for the CSK Cyber Security Hack Night, where you&apos;ll
               have the chance to work with like-minded individuals, solve
               challenges, and develop your skills. Whether you&apos;re just
+
               starting out or are already an experienced hacker, this is a great
               way to collaborate, share knowledge, and learn from others.
             </p>
@@ -81,6 +83,8 @@ const Banner = () => {
             </p>
           </div>
         </div>
+
+         {/* Inaugural_h4ck_N1ght */}
         <div className="flex-1 flex justify-center lg:justify-end w-full">
           <img
             src={BannerImage}

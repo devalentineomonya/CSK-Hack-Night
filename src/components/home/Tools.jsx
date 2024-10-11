@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import ScrollReveal from 'scrollreveal'; 
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 const tools = [
   {
@@ -39,53 +39,49 @@ const tools = [
   },
 ];
 
-
 const Tools = () => {
   useEffect(() => {
     const sr = ScrollReveal();
-  
- 
-    sr.reveal('.tools-title', {
-      origin: 'left',
-      distance: '250px',
-      duration: 1000,
-      easing: 'ease-in-out',
-      opacity: 0,
-      scale: 0.9,
-      reset:true
-    });
-  
-    // Reveal the h3 from the bottom
-    sr.reveal('.tools-description', {
-      origin: 'bottom',
-      distance: '150px',
-      duration: 1000,
-      easing: 'ease-in-out',
-      opacity: 0,
-      scale: 0.9,
-      reset:true
-    });
-  
 
-  
-    sr.reveal('.animate-tools-image', {
-      origin: 'right',
-      distance: '150px',
+    sr.reveal(".tools-title", {
+      origin: "left",
+      distance: "250px",
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.9,
-      reset:true
+      reset: true,
     });
-    sr.reveal('.animate-tools-card', {
-      origin: 'left',
-      distance: '150px',
+
+    // Reveal the h3 from the bottom
+    sr.reveal(".tools-description", {
+      origin: "bottom",
+      distance: "150px",
       duration: 1000,
-      delay:300,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.9,
-      reset:true
+      reset: true,
+    });
+
+    sr.reveal(".animate-tools-image", {
+      origin: "right",
+      distance: "150px",
+      duration: 1000,
+      easing: "ease-in-out",
+      opacity: 0,
+      scale: 0.9,
+      reset: true,
+    });
+    sr.reveal(".animate-tools-card", {
+      origin: "left",
+      distance: "150px",
+      duration: 1000,
+      delay: 300,
+      easing: "ease-in-out",
+      opacity: 0,
+      scale: 0.9,
+      reset: true,
     });
   }, []);
   return (
@@ -99,13 +95,16 @@ const Tools = () => {
             In this event, we will explore several essential tools related to
             cybersecurity. These tools are designed to help you understand
             various aspects of securing systems, protecting data, and mitigating
-            threats. It&apos;s important to familiarize yourself with these tools as
-            they are crucial in the field of cybersecurity.
+            threats. It&apos;s important to familiarize yourself with these
+            tools as they are crucial in the field of cybersecurity.
           </p>
-
+          {/* CyberEyes{W3lc0me_to_ */}
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {tools.map((feature) => (
-              <div key={feature.name} className="border-t border-gray-200 pt-4 animate-tools-card">
+              <div
+                key={feature.name}
+                className="border-t border-gray-200 pt-4 animate-tools-card"
+              >
                 <dt className="font-medium text-gray-900">{feature.name}</dt>
                 <dd className="mt-2 text-sm text-gray-500">
                   {feature.description}

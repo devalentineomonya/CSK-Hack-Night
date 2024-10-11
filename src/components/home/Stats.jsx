@@ -87,6 +87,7 @@ const StatsCard = ({ title, value, icon }) => {
           style={{ fontSize: "2rem" }}
         >
           0
+         
         </div>
       </div>
     </div>
