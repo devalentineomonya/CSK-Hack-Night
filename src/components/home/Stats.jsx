@@ -7,7 +7,7 @@ import { LuFileCode } from "react-icons/lu";
 import PropTypes from "prop-types"
 const Stats = () => {
   return (
-    <section className="w-full flex items-center justify-center h-fit min-h-[50vh] p-6 bg-gradient-to-tr from-black to bg-slate-950">
+    <section className="w-full flex items-center justify-center h-fit min-h-[50vh] p-2 md:p-6 bg-gradient-to-tr from-black to bg-slate-950">
       <div className="w-full max-w-[1400px] grid grid-cols-1 md:grid-cols-2  max-xl:gap-y-3  xl:grid-cols-4 gap-x-4">
         <StatsCard
           title="Registered Members"

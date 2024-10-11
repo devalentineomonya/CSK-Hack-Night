@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="font-grotesk">
+    <div className="font-grotesk overflow-x-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
