@@ -83,8 +83,7 @@ const Banner = () => {
             </p>
           </div>
         </div>
-
-         {/* Inaugural_h4ck_N1ght */}
+         <p className="text-8xl text-red-500 hidden">Inaugural_h4ck_N1ght{`}`}</p> 
         <div className="flex-1 flex justify-center lg:justify-end w-full">
           <img
             src={BannerImage}

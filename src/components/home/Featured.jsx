@@ -4,7 +4,7 @@ import { BiBulb } from "react-icons/bi";
 import { FaLaptopCode, FaRegHandshake } from "react-icons/fa";
 import { IoCodeSlash } from "react-icons/io5";
 import { VscDebugDisconnect } from "react-icons/vsc";
-import ScrollReveal from 'scrollreveal'; 
+import ScrollReveal from "scrollreveal";
 const Featured = () => {
   const features = [
     {
@@ -37,68 +37,67 @@ const Featured = () => {
     const sr = ScrollReveal();
 
     // Reveal the typing text from the left
-    sr.reveal('.description-features', {
-      origin: 'left',
-      distance: '250px',
+    sr.reveal(".description-features", {
+      origin: "left",
+      distance: "250px",
       duration: 1000,
-      delay:500,
-      easing: 'ease-in-out',
+      delay: 500,
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.9,
-      reset:true
+      reset: true,
     });
 
     // Reveal the h3 from the bottom
-    sr.reveal('.animate-title', {
-      origin: 'right',
-      distance: '150px',
+    sr.reveal(".animate-title", {
+      origin: "right",
+      distance: "150px",
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.9,
-      reset:true
+      reset: true,
     });
 
-   
-    sr.reveal('.animate-title-2', {
-      origin: 'left',
-      distance: '250px',
+    sr.reveal(".animate-title-2", {
+      origin: "left",
+      distance: "250px",
       duration: 1000,
-      delay:300,
-      easing: 'ease-in-out',
+      delay: 300,
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.9,
-      reset:true
+      reset: true,
     });
 
-    sr.reveal('.animate-image-features', {
-      origin: 'left',
-      distance: '150px',
+    sr.reveal(".animate-image-features", {
+      origin: "left",
+      distance: "150px",
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.9,
-      reset:true
+      reset: true,
     });
 
-    sr.reveal('.info-card', {
-      origin: 'top',
-      distance: '150px',
+    sr.reveal(".info-card", {
+      origin: "top",
+      distance: "150px",
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.7,
-      reset:true
+      reset: true,
     });
-    sr.reveal('.animate-feature-card', {
-      origin: 'top',
-      distance: '150px',
+    sr.reveal(".animate-feature-card", {
+      origin: "top",
+      distance: "150px",
       duration: 1000,
-      delay:100,
-      easing: 'ease-in-out',
+      delay: 100,
+      easing: "ease-in-out",
       opacity: 0,
       scale: 0.7,
-      reset:true
+      reset: true,
     });
   }, []);
 
@@ -109,7 +108,9 @@ const Featured = () => {
           <img src={FeaturedImage} alt="Featured Banner" />
         </div>
         <div className="flex-1 h-full w-full">
-          <h2 className="font-medium text-4xl animate-title">Tackling Modern</h2>
+          <h2 className="font-medium text-4xl animate-title">
+            Tackling Modern
+          </h2>
           <h2 className="text-gradient font-medium text-5xl animate-title-2">
             Security Challenges
           </h2>
@@ -123,7 +124,7 @@ const Featured = () => {
             needed to tackle the latest security issues. Join us and be part of
             the solution!
           </p>
-
+          <p className="text-7xl text-red-500 hidden">CyberEyes{`{`}W3lc0me_t0_</p>
           <div className="flex items-center h-fit lg:h-36 w-full bg-zinc-100 mt-4 rounded-md relative overflow-hidden info-card">
             <div className="w-1 bg-[#2409CF] absolute left-0 top-0 h-full"></div>
             <div className="flex-1 h-full p-3 ">
@@ -149,7 +150,10 @@ const Featured = () => {
 
           <div className="grid  sm:grid-cols-2 mt-2 gap-4">
             {features.map((feature, index) => (
-              <div key={index} className="h-full w-full flex p-3 animate-feature-card">
+              <div
+                key={index}
+                className="h-full w-full flex p-3 animate-feature-card"
+              >
                 <div className="w-12 h-full">
                   <div className="h-8 aspect-square rounded-full flex items-center justify-center bg-gradient-to-tr text-white from-[#2409CF] to-[#F52727]">
                     {feature.icon}
