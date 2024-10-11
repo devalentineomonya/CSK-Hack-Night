@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-gradient {
+  background: #2409CF;
+  background: linear-gradient(to right, #2409CF 0%, #F52727 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-background{
+  background: url("./assets/background.png");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.banner-gradient-background{
+  background: url("./assets/banner_background.png");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.breathing-image {
+  animation: breathe 2s ease-in-out infinite; 
+}
+
+@keyframes breathe {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px);
+  }
+}
