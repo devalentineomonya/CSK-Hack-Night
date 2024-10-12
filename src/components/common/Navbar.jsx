@@ -18,9 +18,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`h-16 w-full max-xl:px-4 z-20 ${
+      className={`h-16 w-full max-xl:px-4 z-20  flex items-start justify-center  sticky top-0 ${
         yScroll > 20 ? "bg-white text-slate-950  shadow-md" : "bg-transparent text-white"
-      } flex items-start justify-center sticky top-0 transition-colors duration-300`}
+      }`}
     >
       <div className="flex items-center justify-between w-full max-w-[1400px] h-full">
         <h1 className=" font-semibold text-lg xs:text-4xl whitespace-nowrap">
@@ -32,7 +32,7 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
             <li className="text-xl">
-              <Link to="/join">Join</Link>
+              <Link to="http://ctf.cybereyesnetworks.co.ke/register" target="_blank">Join</Link>
             </li>
           </ul>
         </nav>
