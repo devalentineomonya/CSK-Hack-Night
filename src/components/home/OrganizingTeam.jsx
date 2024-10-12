@@ -35,7 +35,7 @@ const people = [
   {
     name: "Mwaniki Tifany",
     role: "CKS General Sec",
-    imageUrl: "https://i.postimg.cc/pT64tmG1/1722813024059.jpg",
+    imageUrl: "https://i.postimg.cc/zDwtXRzd/tiffany.jpg",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
@@ -67,9 +67,17 @@ const people = [
 const OrganizingTeam = () => {
   useEffect(() => {
     const sr = ScrollReveal();
-    sr.reveal(".animate-banner-description", {
+    sr.reveal(".animate-team-image", {
       ...scrollRevealConfig,
       origin: "bottom",
+    });
+    sr.reveal(".animate-team-title", {
+      ...scrollRevealConfig,
+      origin: "left",
+    });
+    sr.reveal(".animate-team-description", {
+      ...scrollRevealConfig,
+      origin: "right",
     });
   }, []);
   return (
@@ -77,10 +85,10 @@ const OrganizingTeam = () => {
       <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-3 sm:space-y-2 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-gradient animate-team-title">
               Our Organizing Team
             </h2>
-            <p className="text-lg text-slate-800">
+            <p className="text-lg text-slate-800 animate-team-description">
               The entire event was brought to life by a team of brilliant
               engineers who collaborated to ensure that students get the best
               out of themselves.
@@ -91,7 +99,7 @@ const OrganizingTeam = () => {
             className="space-y-12 sm:grid sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-4 lg:gap-x-8"
           >
             {people.map((person) => (
-              <li key={person.name}>
+              <li key={person.name} className="animate-team-image">
                 <div className="space-y-4">
                   <div className="aspect-w-3 aspect-h-2 h-[300px]">
                     <img

@@ -4,6 +4,7 @@ import Hero from "../components/home/Hero";
 import Stats from "../components/home/Stats";
 import Tools from "../components/home/Tools";
 import OrganizingTeam from "../components/home/OrganizingTeam";
+import Partners from "../components/home/Partners";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Tools/>
       <Stats/>
       <OrganizingTeam/>
+      <Partners/>
     </>
   );
 };
