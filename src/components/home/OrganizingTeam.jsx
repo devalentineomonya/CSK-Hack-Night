@@ -55,10 +55,10 @@ const people = [
     linkedinUrl: "#",
   },
   {
-    name: "Nhyma Ryha",
-    role: "Technical Staff",
+    name: "Anon Uer",
+    role: "PlaceHolder",
     imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "https://th.bing.com/th/id/OIP.cZNawJEvJFRbxK59nzOPmQHaMW?w=115&h=180&c=7&r=0&o=5&pid=1.7",
     twitterUrl: "#",
     linkedinUrl: "#",
   },
