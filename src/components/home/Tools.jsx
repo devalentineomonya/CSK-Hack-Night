@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import { scrollRevealConfig } from "../../config/scrollReveal";
 
 const tools = [
   {
@@ -44,44 +45,24 @@ const Tools = () => {
     const sr = ScrollReveal();
 
     sr.reveal(".tools-title", {
+      ...scrollRevealConfig,
       origin: "left",
-      distance: "250px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
-    // Reveal the h3 from the bottom
     sr.reveal(".tools-description", {
+      ...scrollRevealConfig,
       origin: "bottom",
-      distance: "150px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
     sr.reveal(".animate-tools-image", {
+      ...scrollRevealConfig,
       origin: "right",
-      distance: "150px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
+
     sr.reveal(".animate-tools-card", {
+      ...scrollRevealConfig,
       origin: "left",
-      distance: "150px",
-      duration: 1000,
       delay: 300,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
   }, []);
   return (

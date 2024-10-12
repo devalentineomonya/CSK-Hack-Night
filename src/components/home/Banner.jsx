@@ -2,51 +2,29 @@ import { useEffect } from "react";
 import BannerImage from "../../assets/banner_img_2.png";
 
 import ScrollReveal from "scrollreveal";
+import { scrollRevealConfig } from "../../config/scrollReveal";
 const Banner = () => {
   useEffect(() => {
     const sr = ScrollReveal();
 
-    // Reveal the typing text from the left
     sr.reveal(".banner-title", {
+      ...scrollRevealConfig,
       origin: "left",
-      distance: "250px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
-    // Reveal the h3 from the bottom
     sr.reveal(".animate-banner-description", {
+      ...scrollRevealConfig,
       origin: "bottom",
-      distance: "150px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
-    // Reveal the description from the bottom
     sr.reveal(".banner-title-2", {
+      ...scrollRevealConfig,
       origin: "bottom",
-      distance: "250px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
     sr.reveal(".banner-image", {
+      ...scrollRevealConfig,
       origin: "right",
-      distance: "150px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
   }, []);
   return (
@@ -57,7 +35,6 @@ const Banner = () => {
             <h2 className="text-3xl banner-title">An Exciting Opportunity</h2>
             <h2 className="text-4xl banner-title-2">
               to Learn and Collaborate
-
             </h2>
           </div>
           <div className="py-3 text-lg text-gray-100 animate-banner-description">
@@ -65,7 +42,6 @@ const Banner = () => {
               Join us for the CSK Cyber Security Hack Night, where you&apos;ll
               have the chance to work with like-minded individuals, solve
               challenges, and develop your skills. Whether you&apos;re just
-
               starting out or are already an experienced hacker, this is a great
               way to collaborate, share knowledge, and learn from others.
             </p>
@@ -83,7 +59,9 @@ const Banner = () => {
             </p>
           </div>
         </div>
-         <p className="text-8xl text-red-500 hidden">Inaugural_h4ck_N1ght{`}`}</p> 
+        <p className="text-8xl text-red-500 hidden">
+          Inaugural_h4ck_N1ght{`}`}
+        </p>
         <div className="flex-1 flex justify-center lg:justify-end w-full">
           <img
             src={BannerImage}

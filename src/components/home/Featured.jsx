@@ -5,6 +5,7 @@ import { FaLaptopCode, FaRegHandshake } from "react-icons/fa";
 import { IoCodeSlash } from "react-icons/io5";
 import { VscDebugDisconnect } from "react-icons/vsc";
 import ScrollReveal from "scrollreveal";
+import { scrollRevealConfig } from "../../config/scrollReveal";
 const Featured = () => {
   const features = [
     {
@@ -36,66 +37,35 @@ const Featured = () => {
   useEffect(() => {
     const sr = ScrollReveal();
 
-    // Reveal the typing text from the left
     sr.reveal(".description-features", {
+      ...scrollRevealConfig,
       origin: "left",
-      distance: "250px",
-      duration: 1000,
-      delay: 500,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
-    // Reveal the h3 from the bottom
     sr.reveal(".animate-title", {
+      ...scrollRevealConfig,
       origin: "right",
-      distance: "150px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
     sr.reveal(".animate-title-2", {
+      ...scrollRevealConfig,
       origin: "left",
-      distance: "250px",
-      duration: 1000,
-      delay: 300,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
     sr.reveal(".animate-image-features", {
+      ...scrollRevealConfig,
       origin: "left",
-      distance: "150px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
-      scale: 0.9,
-      reset: true,
     });
 
     sr.reveal(".info-card", {
+      ...scrollRevealConfig,
       origin: "top",
-      distance: "150px",
-      duration: 1000,
-      easing: "ease-in-out",
-      opacity: 0,
       scale: 0.7,
       reset: true,
     });
     sr.reveal(".animate-feature-card", {
+      ...scrollRevealConfig,
       origin: "top",
-      distance: "150px",
-      duration: 1000,
-      delay: 100,
-      easing: "ease-in-out",
-      opacity: 0,
       scale: 0.7,
       reset: true,
     });
@@ -124,7 +94,9 @@ const Featured = () => {
             needed to tackle the latest security issues. Join us and be part of
             the solution!
           </p>
-          <p className="text-7xl text-red-500 hidden">CyberEyes{`{`}W3lc0me_t0_</p>
+          <p className="text-7xl text-red-500 hidden">
+            CyberEyes{`{`}W3lc0me_t0_
+          </p>
           <div className="flex items-center h-fit lg:h-36 w-full bg-zinc-100 mt-4 rounded-md relative overflow-hidden info-card">
             <div className="w-1 bg-[#2409CF] absolute left-0 top-0 h-full"></div>
             <div className="flex-1 h-full p-3 ">

@@ -3,6 +3,7 @@ import Featured from "../components/home/Featured";
 import Hero from "../components/home/Hero";
 import Stats from "../components/home/Stats";
 import Tools from "../components/home/Tools";
+import OrganizingTeam from "../components/home/OrganizingTeam";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner/>
       <Tools/>
       <Stats/>
+      <OrganizingTeam/>
     </>
   );
 };
