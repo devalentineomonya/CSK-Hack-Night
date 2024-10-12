@@ -124,7 +124,7 @@ const About = () => {
                 <h3 className="text-xl font-medium text-gray-900">
                   {link.name}
                 </h3>
-                <p className="mt-4 text-base text-gray-200">
+                <p className="mt-4 text-base text-gray-600">
                   {link.description}
                 </p>
               </div>
