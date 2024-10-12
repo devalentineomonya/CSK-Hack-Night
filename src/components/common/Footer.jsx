@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi"; // Import external link icon
 
 const Footer = () => {
   return (
-    <footer className="shadow-lg flex items-center justify-center flex-col bg-white  h-52 mt-6 border-t ">
+    <footer className="shadow-lg flex items-center justify-center flex-col bg-white  h-52 mt-6 border-t max-xl:px-4 ">
       <div className="w-full max-w-3xl flex items-center justify-center text-gray-700">
         <div className="flex items-center w-full justify-between">
           <div className="flex flex-col justify-start">

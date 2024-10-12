@@ -2,7 +2,7 @@ import { FaLaptopCode, FaUsers, FaChartLine, FaUser } from "react-icons/fa";
 import ctfScore from "../assets/ctfscore.png";
 import { useEffect } from "react";
 import { scrollRevealConfig } from "../config/scrollReveal";
-import ScrollReveal from "scrollreveal"
+import ScrollReveal from "scrollreveal";
 const About = () => {
   const eventBenefits = [
     {
@@ -124,7 +124,7 @@ const About = () => {
                 <h3 className="text-xl font-medium text-gray-900">
                   {link.name}
                 </h3>
-                <p className="mt-4 text-base text-gray-500">
+                <p className="mt-4 text-base text-gray-200">
                   {link.description}
                 </p>
               </div>
@@ -133,7 +133,7 @@ const About = () => {
         </div>
       </section>
 
-      <div className="flex items-start justify-center">
+      <div className="flex items-start justify-center banner-gradient-background h-full min-h-[65vh] ">
         <div className="max-w-[1400px]">
           <div className="relative  mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
             <div className="h-56 bg-indigo-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2 animate-about-image">
@@ -143,16 +143,16 @@ const About = () => {
                 alt="Support team"
               />
             </div>
-            <div className="max-w-2xl mx-auto lg:max-w-none lg:mr-0 lg:ml-auto lg:w-1/2 lg:pl-10 animate-about-stats">
+            <div className="max-w-2xl mx-auto lg:max-w-none lg:mr-0 lg:ml-auto lg:w-1/2 lg:pl-10 animate-about-stats max-lg:mt-6">
               <div>
                 <div className="flex items-center justify-center h-12 w-12 rounded-md  bg-gradient-to-tr text-white from-[#2409CF] to-[#F52727]">
                   <FaUser className="h-6 w-6" aria-hidden="true" />
                 </div>
               </div>
-              <h2 className="mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              <h2 className="mt-6 text-3xl font-extrabold text-gray-100 sm:text-4xl">
                 Got to learn and collaborate with/from techies
               </h2>
-              <p className="mt-6 text-base text-gray-500">
+              <p className="mt-6 text-base text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
                 nihil ea rerum ipsa. Nostrum consectetur sequi culpa doloribus
                 omnis, molestiae esse placeat, exercitationem magnam quod
@@ -161,26 +161,26 @@ const About = () => {
               <div className="mt-8 overflow-hidden">
                 <dl className="-mx-8 -mt-8 flex flex-wrap">
                   <div className="flex flex-col px-8 pt-8">
-                    <dt className="order-2 text-base font-medium text-gray-500">
+                    <dt className="order-2 text-base font-medium text-white">
                       Hours
                     </dt>
-                    <dd className="order-1 text-2xl font-extrabold text-indigo-600 sm:text-3xl">
+                    <dd className="order-1 text-2xl font-extrabold text-gray-200 sm:text-3xl">
                       10+
                     </dd>
                   </div>
                   <div className="flex flex-col px-8 pt-8">
-                    <dt className="order-2 text-base font-medium text-gray-500">
+                    <dt className="order-2 text-base font-medium text-gray-200">
                       Attendies
                     </dt>
-                    <dd className="order-1 text-2xl font-extrabold text-indigo-600 sm:text-3xl">
+                    <dd className="order-1 text-2xl font-extrabold text-gray-200 sm:text-3xl">
                       100+
                     </dd>
                   </div>
                   <div className="flex flex-col px-8 pt-8">
-                    <dt className="order-2 text-base font-medium text-gray-500">
+                    <dt className="order-2 text-base font-medium text-gray-200">
                       Challenges
                     </dt>
-                    <dd className="order-1 text-2xl font-extrabold text-indigo-600 sm:text-3xl">
+                    <dd className="order-1 text-2xl font-extrabold text-gray-200 sm:text-3xl">
                       15+
                     </dd>
                   </div>
@@ -188,25 +188,25 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-              <h1 className="text-4xl font-extrabold tracking-tight text-gradient text-white md:text-5xl lg:text-6xl mb-2 animate-score-title">
-                CTF Scoreboard
-              </h1>
-              <p className="text-xl text-slate-700 mt-4 animate-score-description">
-                The Capture The Flag (CTF) competition was fierce, with a total
-                of 20 teams participating. Leading the scoreboard was{" "}
-                <strong>Tripple Light</strong> from Kirinyaga University,
-                scoring an impressive 1120 points. They were followed closely by{" "}
-                <strong>&lt;Thr3at_Hunters/&gt;</strong>, and{" "}
-                <strong>TechNocturnals</strong>. For more detailed results,
-                refer to the scoreboard image below.
-              </p>
-            </div>
-            <div className="w-full h-full animate-about-scoreboard-image">
-              <img src={ctfScore} />
-            </div>
-          </div>
+        </div>
+      </div>
+      <div>
+        <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-extrabold tracking-tight text-gradient text-white md:text-5xl lg:text-6xl mb-2 animate-score-title">
+            CTF Scoreboard
+          </h1>
+          <p className="text-xl text-slate-700 mt-4 animate-score-description">
+            The Capture The Flag (CTF) competition was fierce, with a total of
+            20 teams participating. Leading the scoreboard was{" "}
+            <strong>Tripple Light</strong> from Kirinyaga University, scoring an
+            impressive 1120 points. They were followed closely by{" "}
+            <strong>&lt;Thr3at_Hunters/&gt;</strong>, and{" "}
+            <strong>TechNocturnals</strong>. For more detailed results, refer to
+            the scoreboard image below.
+          </p>
+        </div>
+        <div className="w-full h-full flex justify-center items-center animate-about-scoreboard-image">
+          <img src={ctfScore}  className="w-ful h-full"/>
         </div>
       </div>
     </section>
